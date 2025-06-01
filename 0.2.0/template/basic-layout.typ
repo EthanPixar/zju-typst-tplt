@@ -56,6 +56,12 @@
       bottom: if y == 0 { 1.2pt } else { if is-table-cell-stroked { 0.5pt } else { 0pt } },
     ),
   )
+
+  show table: it => {
+    set par(justify: false)
+    it
+  }
+
   set table.hline(stroke: 1.2pt)
 
   // center
@@ -71,5 +77,24 @@
   show: equate.with(breakable: true, sub-numbering: true, number-mode: "label")
   set math.equation(numbering: "(1a)", supplement: none)
 
+  doc
+}
+
+#let BL-table(
+  is-table-cell-stroked: false,
+  doc,
+) = {
+  set table(
+    align: center,
+    inset: (
+      x: if is-table-cell-stroked { 5pt } else { 16pt },
+      y: 5pt,
+    ),
+    stroke: (x, y) => (
+      left: if x > 0 { if is-table-cell-stroked { 0.5pt } else { 0pt } },
+      top: if y == 0 { 1.2pt },
+      bottom: if y == 0 { 1.2pt } else { if is-table-cell-stroked { 0.5pt } else { 0pt } },
+    ),
+  )
   doc
 }
