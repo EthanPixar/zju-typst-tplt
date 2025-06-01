@@ -51,7 +51,7 @@
     ... // 正文内容
     ```
 
-    使用快捷键 `Cmd + K, V` 进行预览。页面最上方的 `Export PDF` 可以导出 PDF。或者使用命令面板 `Cmd + Shift + P`，输入 `Typst` 查看更多指令。
+    使用快捷键 `Cmd + K, V` 进行预览。代码编辑器最上方的 `Export PDF` 可以导出 PDF。或者使用命令面板 `Cmd + Shift + P`，输入 `Typst` 查看更多指令。
 
 ## 使用示例
 
