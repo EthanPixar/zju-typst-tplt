@@ -23,6 +23,7 @@
     ```
 
     为保证字体效果相同，需安装我提供的字体包`fontsForTypst.zip`，或者修改为你系统中已有的字体。
+    [字体包下载链接（使用浙大云盘）](https://pan.zju.edu.cn/share/1ce12e1eb87ed429da2542a14d)
 
 ## 小贴士
 
