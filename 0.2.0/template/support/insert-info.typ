@@ -1,13 +1,14 @@
 #import "basic-settings.typ": *
 
+#let info = json("../../info.json")
+
 #let insert-info(english, ymd, is-long-info) = secenter({
-  let long-info = [Gong Yuchuan, Major in Biomedical Engineering | Student ID: 3220102299]
-  let name = if english [Gong Yuchuan | ] else [龚玉传｜]
+  let name = if english [#info.name; | ] else [#info.name-cn｜]
 
   v(5pt)
   if english {
     set text(font: enserif-c)
-    if is-long-info { long-info } else { name + [*BME* 3220102299] }
+    if is-long-info { info.long-info } else { name + [*#info.major-short* #info.student-id] }
     linebreak()
     emph(insert-date(english: true, ymd))
   } else {
@@ -17,14 +18,14 @@
         align: center + horizon,
         columns: if ymd != none { (1fr, 1fr, 1fr, 1fr) } else { (1fr, 1fr, 1fr) },
         column-gutter: 5pt,
-        box-2grid([姓#if ymd == none [　　]名：], "龚玉传"),
-        box-2grid([专#if ymd == none [　　]业：], "生物医学工程"),
-        box-2grid([学#if ymd == none [　　]号：], "3220102299"),
+        box-2grid([姓#if ymd == none [　　]名：], info.name-cn),
+        box-2grid([专#if ymd == none [　　]业：], info.major-cn),
+        box-2grid([学#if ymd == none [　　]号：], info.student-id),
         if ymd != none { box-2grid("日期：", insert-date(condensed: true, ymd)) }
       )
     } else {
       name
-      text(font: enserif-c)[*BME* 3220102299]
+      text(font: enserif-c)[*#info.major-short* #info.student-id]
       linebreak()
       insert-date(ymd)
     }

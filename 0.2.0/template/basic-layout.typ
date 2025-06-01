@@ -1,7 +1,9 @@
 #import "support/basic-settings.typ": *
 
+#let info = json("../info.json")
+
 #let BL(
-  author: "Ethan Pixar",
+  author: info.author,
   is-table-cell-stroked: false,
   doc,
 ) = {

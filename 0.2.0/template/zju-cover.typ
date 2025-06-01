@@ -1,11 +1,13 @@
 #import "support/basic-settings.typ": *
 
+#let info = json("../info.json")
+
 #let zju-cover(
   title: "本科实验报告",
-  miname: "龚玉传",
-  student-id: "3220102299",
-  major: "生物医学工程",
-  school: "生物医学工程与仪器科学学院",
+  miname: info.name-cn,
+  student-id: info.student-id,
+  major: info.major-cn,
+  school: info.school-cn,
   course: "课程名称",
   teacher: "指导老师",
   ymd: "today",

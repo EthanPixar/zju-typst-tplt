@@ -1,14 +1,16 @@
 #import "support/basic-settings.typ": *
 
+#let info = json("../info.json")
+
 #let exp-info-chart(
   titled: true,
   course: "课程名称",
   exp-cate: "实验类型",
   teacher: "指导老师",
   exp-name: "试验名称",
-  miname: "龚玉传",
-  student-id: "3220102299",
-  major: "生物医学工程",
+  miname: info.name-cn,
+  student-id: info.student-id,
+  major: info.major-cn,
   student-count: 1,
   is-student-titled: false,
   students: none,
