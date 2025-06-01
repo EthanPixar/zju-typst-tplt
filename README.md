@@ -3,7 +3,7 @@
 1. 使用 VS Code 打开仓库
 2. VS Code 中安装 Tinymist Typst 插件
 3. 修改 `info.json` 文件中的信息为你自己的信息
-4. 打开文件 `tplt/0.2.0/template/support/list/fonts.typ`，可以看到字体列表：
+4. 打开文件 `zju-typst-tplt/0.2.0/template/support/list/fonts.typ`，可以看到字体列表：
 
     ```typst
     #let ensans = "SF Pro Display" // 英文无衬线体
@@ -27,14 +27,14 @@
 
     [字体包下载链接（使用浙大云盘）](https://pan.zju.edu.cn/share/1ce12e1eb87ed429da2542a14d)
 
-5. 把 `tplt` 放在 Typst 指定的本地模版目录下，（macOS 为 `/Users/ethanpixar/Library/Application Support/typst/packages/local/`）。
+5. 把 `zju-typst-tplt` 放在 Typst 指定的本地模版目录下，（macOS 为 `/Users/ethanpixar/Library/Application Support/typst/packages/local/`）。
 
     该目录也可以通过命令面板 `Cmd + Shift + P` 输入 `Typst: Create Local Packages` 来找到。
 
 6. 现在就可以在任意目录下新建 `xxx.typ`，都可以使用该模板，在 `xxx.typ` 文件开头输入：
 
     ```typst
-    #import "@local/tplt:0.2.0": *
+    #import "@local/zju-typst-tplt:0.2.0": *
 
     #show: BL // 基本样式，务必首先使用
     // 定义文件信息
