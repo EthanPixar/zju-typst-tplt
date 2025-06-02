@@ -63,6 +63,7 @@
   }
 
   set table.hline(stroke: 1.2pt)
+  set table.vline(stroke: 1pt)
 
   // center
   show image: set align(center)
