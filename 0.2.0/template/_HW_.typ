@@ -24,13 +24,19 @@
     radius: 6pt,
     inset: 8pt,
     stroke: 2pt + luma(80%),
-    if order == none or order == -1 {
-      [#body]
+    if order == -1 {
+      body
+    } else if order == 0 {
+      grid(
+        columns: 2,
+        column-gutter: 5pt,
+        strong(context problem-counter.get().at(0)), body,
+      )
     } else {
       grid(
         columns: 2,
         column-gutter: 5pt,
-        [*#order*], [#body],
+        strong(order), body,
       )
     },
   )
