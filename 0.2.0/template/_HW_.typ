@@ -30,13 +30,13 @@
       grid(
         columns: 2,
         column-gutter: 5pt,
-        strong(context problem-counter.get().at(0)), body,
+        strong[#context { problem-counter.get().at(0) }], body,
       )
     } else {
       grid(
         columns: 2,
         column-gutter: 5pt,
-        strong(order), body,
+        strong[#order], body,
       )
     },
   )
