@@ -1,6 +1,8 @@
-#import "basic-settings.typ": *
+#import "../list/fonts.typ": *
+#import "ymd.typ": insert-date
+#import "func.typ": *
 
-#let info = json("../../info.json")
+#let info = json("../../../info.json")
 
 #let insert-info(english, ymd, is-long-info) = secenter({
   let name = if english [#info.name; | ] else [#info.name-cn｜]

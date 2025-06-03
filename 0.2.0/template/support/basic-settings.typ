@@ -14,6 +14,8 @@
 
 #import "func/codex.typ": *
 #import "func/func.typ": *
+#import "func/header&footer.typ": *
+#import "func/insert-info.typ": *
 #import "func/num.typ": *
 #import "func/set-lang-at.typ": *
 #import "func/set-lang-nt.typ": *

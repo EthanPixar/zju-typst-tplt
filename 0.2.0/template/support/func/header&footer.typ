@@ -1,4 +1,4 @@
-#import "basic-settings.typ": *
+#import "../list/fonts.typ": *
 
 // headers
 #let zju-header(

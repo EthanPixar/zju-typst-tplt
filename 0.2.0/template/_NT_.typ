@@ -1,5 +1,5 @@
 #import "support/basic-settings.typ": *
-#import "support/header&footer.typ": *
+
 #import "@preview/cheq:0.2.2": checklist
 
 // FUNCTION
