@@ -46,7 +46,8 @@
 )
 
 // Add a blank page
-#let blankpage(content, margin: (x: 0cm, y: 0cm)) = page(
+#let blankpage(content, margin: (x: 0cm, y: 0cm), flipped: false) = page(
+  flipped: flipped,
   margin: (x: margin.x, y: margin.y),
   header: [],
   footer: [],
