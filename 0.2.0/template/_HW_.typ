@@ -88,6 +88,7 @@
   is-long-info: true,
   ymd: none,
   english: false,
+  first-line-indent-all: false,
   doc,
 ) = {
   // header & footer
@@ -116,5 +117,5 @@
     secenter(Sans(size: 18pt, course))
   }
   insert-info(english, ymd, is-long-info)
-  set-lang(english, doc)
+  set-lang(english, first-line-indent-all: false, doc)
 }
