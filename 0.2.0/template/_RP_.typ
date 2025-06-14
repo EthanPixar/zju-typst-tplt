@@ -6,7 +6,6 @@
 #let RP(
   course: "课程",
   proj-name: "Project",
-  ymd: none,
   english: false,
   doc,
 ) = {
